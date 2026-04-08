@@ -1,0 +1,197 @@
+// =========================================================
+// Minimal DBML for dbdiagram.io
+// Current-data core + lightweight website crawl layer
+// Core fields are limited to confirmed uploaded data.
+// Added extension tables: academies.sitemap, academies.webpage
+// =========================================================
+
+// =========================================================
+// Schema: academies
+// =========================================================
+
+Table academies.organization {
+  acad_id varchar(64) [pk, note: 'GSA academy id from global_science_academies_final.xlsx']
+
+  acad_name varchar(512)
+  acad_name_abbreviation varchar(128)
+  acad_name_language varchar(64)
+  acad_name_en varchar(512)
+  acad_name_zh varchar(512)
+
+  discipline varchar(256)
+  founding_date int
+  headquarters varchar(256)
+
+  ifHasMembership varchar(64)
+  membership_type text
+  sections text
+
+  contact_email varchar(256)
+
+  indexes {
+    acad_name
+    acad_name_en
+  }
+}
+
+Table academies.website {
+  website_id int [pk, increment]
+  acad_id varchar(64) [not null]
+
+  website_url text
+  website_lang_code varchar(32)
+  website_lang varchar(64)
+
+  indexes {
+    acad_id
+    (acad_id, website_url) [unique]
+  }
+}
+
+Table academies.sitemap {
+  sitemap_id int [pk, increment]
+  website_id int [not null]
+
+  sitemap_url text [not null]
+  sitemap_type varchar(64) [note: 'e.g. urlset, sitemapindex, other_xml']
+  fetched_at timestamp
+
+  indexes {
+    website_id
+    (website_id, sitemap_url) [unique]
+  }
+}
+
+Table academies.webpage {
+  webpage_id int [pk, increment]
+  website_id int [not null]
+  sitemap_id int [note: 'Nullable: page may be discovered outside sitemap']
+
+  page_url text [not null]
+  page_title text
+  page_type varchar(64) [note: 'e.g. about, members, contact, statutes, news, other']
+  lastmod timestamp
+  http_status int
+  fetched_at timestamp
+
+  indexes {
+    website_id
+    sitemap_id
+    (website_id, page_url) [unique]
+  }
+}
+
+Table academies.location {
+  acad_id varchar(64) [pk]
+
+  address text
+  city varchar(128)
+  country varchar(128)
+  continent varchar(64)
+  latitude float
+  longitude float
+
+  indexes {
+    country
+    continent
+  }
+}
+
+Table academies.identifiers {
+  acad_id varchar(64) [pk]
+
+  DBpedia_identifier varchar(256)
+  Wikidata_identifier varchar(256)
+  wikipedia_identifier varchar(256)
+  GND_identifier varchar(256)
+  GRID_identifier varchar(256)
+  ror_id varchar(256)
+  LOC_identifier varchar(256)
+  VIAF_identifier varchar(256)
+}
+
+// =========================================================
+// Schema: journals
+// =========================================================
+
+Table journals.journal {
+  journal_id bigint [pk, increment]
+
+  title text
+  type_of_publication varchar(255)
+  zdb_id varchar(64) [unique]
+  source_koeRef varchar(128) [note: 'Raw Source_koeRef value from journal dataset']
+
+  idn varchar(128)
+  subseries text
+  contributor text
+  corporate_body text [note: 'Raw Corporate body field from journal dataset']
+  published text
+  publication_history text
+  monographic_series text
+  former_later_titles text
+  other_editions text
+  further_related_titles text
+  places_of_distribution text
+
+  linking_issn varchar(64)
+  issn varchar(64)
+
+  ean text
+  isbn text
+  standard_numbers text
+  oclc_number text
+  coden text
+
+  url text
+  persistent_identifier text
+  ddc_subject_groups text
+  ddc_numbers text
+  other_classifications text
+  subject_indexing text
+  special_subject_collections text
+
+  language varchar(128)
+  country_of_publication varchar(128)
+  media_type varchar(128)
+  frequency varchar(128)
+
+  indexes {
+    zdb_id
+    source_koeRef
+    language
+    country_of_publication
+  }
+}
+
+Table journals.koeref_academy_map {
+  koeRef varchar(128) [not null]
+  corporate_body text [not null]
+  acad_id varchar(64) [not null]
+
+  indexes {
+    (koeRef, corporate_body, acad_id) [pk]
+    koeRef
+    acad_id
+  }
+}
+
+// =========================================================
+// Relationships (Foreign Keys)
+// =========================================================
+
+Ref: academies.website.acad_id > academies.organization.acad_id [delete: cascade, update: cascade]
+Ref: academies.sitemap.website_id > academies.website.website_id [delete: cascade, update: cascade]
+Ref: academies.webpage.website_id > academies.website.website_id [delete: cascade, update: cascade]
+Ref: academies.webpage.sitemap_id > academies.sitemap.sitemap_id [delete: set null, update: cascade]
+Ref: academies.location.acad_id - academies.organization.acad_id [delete: cascade, update: cascade]
+Ref: academies.identifiers.acad_id - academies.organization.acad_id [delete: cascade, update: cascade]
+
+Ref: journals.koeref_academy_map.acad_id > academies.organization.acad_id [delete: cascade, update: cascade]
+Ref: journals.koeref_academy_map.koeRef > journals.journal.source_koeRef [delete: cascade, update: cascade]
+// Note:
+// No hard FK from journals.journal.source_koeRef to journals.koeref_academy_map.koeRef,
+// because the current mapping CSV is not unique on koeRef.
+
+
+Ref: "academies"."identifiers"."acad_id" < "academies"."identifiers"."wikipedia_identifier"
