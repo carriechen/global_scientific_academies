@@ -1,0 +1,250 @@
+Country or Area,M49 Code,ISO-alpha2 Code,ISO-alpha3 Code,Developed / Developing regions
+Algeria,12,DZ,DZA,Developing
+Egypt,818,EG,EGY,Developing
+Libya,434,LY,LBY,Developing
+Morocco,504,MA,MAR,Developing
+Sudan,729,SD,SDN,Developing
+Tunisia,788,TN,TUN,Developing
+Western Sahara,732,EH,ESH,Developing
+British Indian Ocean Territory,86,IO,IOT,Developing
+Burundi,108,BI,BDI,Developing
+Comoros,174,KM,COM,Developing
+Djibouti,262,DJ,DJI,Developing
+Eritrea,232,ER,ERI,Developing
+Ethiopia,231,ET,ETH,Developing
+French Southern Territories,260,TF,ATF,Developing
+Kenya,404,KE,KEN,Developing
+Madagascar,450,MG,MDG,Developing
+Malawi,454,MW,MWI,Developing
+Mauritius,480,MU,MUS,Developing
+Mayotte,175,YT,MYT,Developing
+Mozambique,508,MZ,MOZ,Developing
+Réunion,638,RE,REU,Developing
+Rwanda,646,RW,RWA,Developing
+Seychelles,690,SC,SYC,Developing
+Somalia,706,SO,SOM,Developing
+South Sudan,728,SS,SSD,Developing
+Uganda,800,UG,UGA,Developing
+United Republic of Tanzania,834,TZ,TZA,Developing
+Zambia,894,ZM,ZMB,Developing
+Zimbabwe,716,ZW,ZWE,Developing
+Angola,24,AO,AGO,Developing
+Cameroon,120,CM,CMR,Developing
+Central African Republic,140,CF,CAF,Developing
+Chad,148,TD,TCD,Developing
+Congo,178,CG,COG,Developing
+Democratic Republic of the Congo,180,CD,COD,Developing
+Equatorial Guinea,226,GQ,GNQ,Developing
+Gabon,266,GA,GAB,Developing
+Sao Tome and Principe,678,ST,STP,Developing
+Botswana,72,BW,BWA,Developing
+Eswatini,748,SZ,SWZ,Developing
+Lesotho,426,LS,LSO,Developing
+Namibia,516,NA,NAM,Developing
+South Africa,710,ZA,ZAF,Developing
+Benin,204,BJ,BEN,Developing
+Burkina Faso,854,BF,BFA,Developing
+Cabo Verde,132,CV,CPV,Developing
+Côte d’Ivoire,384,CI,CIV,Developing
+Gambia,270,GM,GMB,Developing
+Ghana,288,GH,GHA,Developing
+Guinea,324,GN,GIN,Developing
+Guinea-Bissau,624,GW,GNB,Developing
+Liberia,430,LR,LBR,Developing
+Mali,466,ML,MLI,Developing
+Mauritania,478,MR,MRT,Developing
+Niger,562,NE,NER,Developing
+Nigeria,566,NG,NGA,Developing
+Saint Helena,654,SH,SHN,Developing
+Senegal,686,SN,SEN,Developing
+Sierra Leone,694,SL,SLE,Developing
+Togo,768,TG,TGO,Developing
+Anguilla,660,AI,AIA,Developing
+Antigua and Barbuda,28,AG,ATG,Developing
+Aruba,533,AW,ABW,Developing
+Bahamas,44,BS,BHS,Developing
+Barbados,52,BB,BRB,Developing
+"Bonaire, Sint Eustatius and Saba",535,BQ,BES,Developing
+British Virgin Islands,92,VG,VGB,Developing
+Cayman Islands,136,KY,CYM,Developing
+Cuba,192,CU,CUB,Developing
+Curaçao,531,CW,CUW,Developing
+Dominica,212,DM,DMA,Developing
+Dominican Republic,214,DO,DOM,Developing
+Grenada,308,GD,GRD,Developing
+Guadeloupe,312,GP,GLP,Developing
+Haiti,332,HT,HTI,Developing
+Jamaica,388,JM,JAM,Developing
+Martinique,474,MQ,MTQ,Developing
+Montserrat,500,MS,MSR,Developing
+Puerto Rico,630,PR,PRI,Developing
+Saint Barthélemy,652,BL,BLM,Developing
+Saint Kitts and Nevis,659,KN,KNA,Developing
+Saint Lucia,662,LC,LCA,Developing
+Saint Martin (French Part),663,MF,MAF,Developing
+Saint Vincent and the Grenadines,670,VC,VCT,Developing
+Sint Maarten (Dutch part),534,SX,SXM,Developing
+Trinidad and Tobago,780,TT,TTO,Developing
+Turks and Caicos Islands,796,TC,TCA,Developing
+United States Virgin Islands,850,VI,VIR,Developing
+Belize,84,BZ,BLZ,Developing
+Costa Rica,188,CR,CRI,Developing
+El Salvador,222,SV,SLV,Developing
+Guatemala,320,GT,GTM,Developing
+Honduras,340,HN,HND,Developing
+Mexico,484,MX,MEX,Developing
+Nicaragua,558,NI,NIC,Developing
+Panama,591,PA,PAN,Developing
+Argentina,32,AR,ARG,Developing
+Bolivia (Plurinational State of),68,BO,BOL,Developing
+Bouvet Island,74,BV,BVT,Developing
+Brazil,76,BR,BRA,Developing
+Chile,152,CL,CHL,Developing
+Colombia,170,CO,COL,Developing
+Ecuador,218,EC,ECU,Developing
+Falkland Islands (Malvinas),238,FK,FLK,Developing
+French Guiana,254,GF,GUF,Developing
+Guyana,328,GY,GUY,Developing
+Paraguay,600,PY,PRY,Developing
+Peru,604,PE,PER,Developing
+South Georgia and the South Sandwich Islands,239,GS,SGS,Developing
+Suriname,740,SR,SUR,Developing
+Uruguay,858,UY,URY,Developing
+Venezuela (Bolivarian Republic of),862,VE,VEN,Developing
+Bermuda,60,BM,BMU,Developed
+Canada,124,CA,CAN,Developed
+Greenland,304,GL,GRL,Developed
+Saint Pierre and Miquelon,666,PM,SPM,Developed
+United States of America,840,US,USA,Developed
+Antarctica,10,AQ,ATA,
+Kazakhstan,398,KZ,KAZ,Developing
+Kyrgyzstan,417,KG,KGZ,Developing
+Tajikistan,762,TJ,TJK,Developing
+Turkmenistan,795,TM,TKM,Developing
+Uzbekistan,860,UZ,UZB,Developing
+China,156,CN,CHN,Developing
+"China, Hong Kong Special Administrative Region",344,HK,HKG,Developing
+"China, Macao Special Administrative Region",446,MO,MAC,Developing
+Democratic People's Republic of Korea,408,KP,PRK,Developing
+Japan,392,JP,JPN,Developed
+Mongolia,496,MN,MNG,Developing
+Republic of Korea,410,KR,KOR,Developed
+Brunei Darussalam,96,BN,BRN,Developing
+Cambodia,116,KH,KHM,Developing
+Indonesia,360,ID,IDN,Developing
+Lao People's Democratic Republic,418,LA,LAO,Developing
+Malaysia,458,MY,MYS,Developing
+Myanmar,104,MM,MMR,Developing
+Philippines,608,PH,PHL,Developing
+Singapore,702,SG,SGP,Developing
+Thailand,764,TH,THA,Developing
+Timor-Leste,626,TL,TLS,Developing
+Viet Nam,704,VN,VNM,Developing
+Afghanistan,4,AF,AFG,Developing
+Bangladesh,50,BD,BGD,Developing
+Bhutan,64,BT,BTN,Developing
+India,356,IN,IND,Developing
+Iran (Islamic Republic of),364,IR,IRN,Developing
+Maldives,462,MV,MDV,Developing
+Nepal,524,NP,NPL,Developing
+Pakistan,586,PK,PAK,Developing
+Sri Lanka,144,LK,LKA,Developing
+Armenia,51,AM,ARM,Developing
+Azerbaijan,31,AZ,AZE,Developing
+Bahrain,48,BH,BHR,Developing
+Cyprus,196,CY,CYP,Developed
+Georgia,268,GE,GEO,Developing
+Iraq,368,IQ,IRQ,Developing
+Israel,376,IL,ISR,Developed
+Jordan,400,JO,JOR,Developing
+Kuwait,414,KW,KWT,Developing
+Lebanon,422,LB,LBN,Developing
+Oman,512,OM,OMN,Developing
+Qatar,634,QA,QAT,Developing
+Saudi Arabia,682,SA,SAU,Developing
+State of Palestine,275,PS,PSE,Developing
+Syrian Arab Republic,760,SY,SYR,Developing
+Turkey,792,TR,TUR,Developing
+United Arab Emirates,784,AE,ARE,Developing
+Yemen,887,YE,YEM,Developing
+Belarus,112,BY,BLR,Developed
+Bulgaria,100,BG,BGR,Developed
+Czechia,203,CZ,CZE,Developed
+Hungary,348,HU,HUN,Developed
+Poland,616,PL,POL,Developed
+Republic of Moldova,498,MD,MDA,Developed
+Romania,642,RO,ROU,Developed
+Russian Federation,643,RU,RUS,Developed
+Slovakia,703,SK,SVK,Developed
+Ukraine,804,UA,UKR,Developed
+Åland Islands,248,AX,ALA,Developed
+Guernsey,831,GG,GGY,Developed
+Jersey,832,JE,JEY,Developed
+Sark,680,,,Developed
+Denmark,208,DK,DNK,Developed
+Estonia,233,EE,EST,Developed
+Faroe Islands,234,FO,FRO,Developed
+Finland,246,FI,FIN,Developed
+Iceland,352,IS,ISL,Developed
+Ireland,372,IE,IRL,Developed
+Isle of Man,833,IM,IMN,Developed
+Latvia,428,LV,LVA,Developed
+Lithuania,440,LT,LTU,Developed
+Norway,578,NO,NOR,Developed
+Svalbard and Jan Mayen Islands,744,SJ,SJM,Developed
+Sweden,752,SE,SWE,Developed
+United Kingdom of Great Britain and Northern Ireland,826,GB,GBR,Developed
+Albania,8,AL,ALB,Developed
+Andorra,20,AD,AND,Developed
+Bosnia and Herzegovina,70,BA,BIH,Developed
+Croatia,191,HR,HRV,Developed
+Gibraltar,292,GI,GIB,Developed
+Greece,300,GR,GRC,Developed
+Holy See,336,VA,VAT,Developed
+Italy,380,IT,ITA,Developed
+Malta,470,MT,MLT,Developed
+Montenegro,499,ME,MNE,Developed
+North Macedonia,807,MK,MKD,Developed
+Portugal,620,PT,PRT,Developed
+San Marino,674,SM,SMR,Developed
+Serbia,688,RS,SRB,Developed
+Slovenia,705,SI,SVN,Developed
+Spain,724,ES,ESP,Developed
+Austria,40,AT,AUT,Developed
+Belgium,56,BE,BEL,Developed
+France,250,FR,FRA,Developed
+Germany,276,DE,DEU,Developed
+Liechtenstein,438,LI,LIE,Developed
+Luxembourg,442,LU,LUX,Developed
+Monaco,492,MC,MCO,Developed
+Netherlands,528,NL,NLD,Developed
+Switzerland,756,CH,CHE,Developed
+Australia,36,AU,AUS,Developed
+Christmas Island,162,CX,CXR,Developed
+Cocos (Keeling) Islands,166,CC,CCK,Developed
+Heard Island and McDonald Islands,334,HM,HMD,Developed
+New Zealand,554,NZ,NZL,Developed
+Norfolk Island,574,NF,NFK,Developed
+Fiji,242,FJ,FJI,Developing
+New Caledonia,540,NC,NCL,Developing
+Papua New Guinea,598,PG,PNG,Developing
+Solomon Islands,90,SB,SLB,Developing
+Vanuatu,548,VU,VUT,Developing
+Guam,316,GU,GUM,Developing
+Kiribati,296,KI,KIR,Developing
+Marshall Islands,584,MH,MHL,Developing
+Micronesia (Federated States of),583,FM,FSM,Developing
+Nauru,520,NR,NRU,Developing
+Northern Mariana Islands,580,MP,MNP,Developing
+Palau,585,PW,PLW,Developing
+United States Minor Outlying Islands,581,UM,UMI,Developing
+American Samoa,16,AS,ASM,Developing
+Cook Islands,184,CK,COK,Developing
+French Polynesia,258,PF,PYF,Developing
+Niue,570,NU,NIU,Developing
+Pitcairn,612,PN,PCN,Developing
+Samoa,882,WS,WSM,Developing
+Tokelau,772,TK,TKL,Developing
+Tonga,776,TO,TON,Developing
+Tuvalu,798,TV,TUV,Developing
+Wallis and Futuna Islands,876,WF,WLF,Developing
